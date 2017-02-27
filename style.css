@@ -1,3 +1,82 @@
+/* Global */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
 body {
     background: azure;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1{
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/* Positioning */
+header {
+    background: rgba (0, 128, 128, .56);
+    position: fixed;
+    widows: 100%;
+    
+}
+
+/* Layout */
+.page-wrapper {
+    background: red;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#zen-intro {
+    background: #09c69a;
+}
+
+#zen-supporting {
+    background: #fffedb;
+}
+
+.sidebar {
+    background: #6eff4c;
+}
+/* Media Queries */
+
+/* Mobile: 320px = 20em */
+@media screen and (min-width: 20em) { 
+
+  /* Diagnostic Styling. Delete When Done. */
+  body:before {
+       background: yellow;
+       content: "Mobile Size";
+  }
+ /* end mobile */ 
+}
+
+/* Tablet:  768px = 160em */
+@media screen and (min-width: 48em)  {
+
+  /* Diagnostic Styling. Delete When Done. */
+  body:before {
+       background: yellow;
+       content: "Tablet Size";
+  }
+/* end tablet */
+}
+
+/* Desktop: 1280px = 80em */
+@media screen and (min-width: 80em) { 
+  
+  /* Diagnostic Styling. Delete When Done. */
+  body:before {
+       background: yellow;
+       content: "Desktop Size";
+  }
+/* end desktop */
 }
